@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charaset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Guessing Number Bridge of Death</title>
+    <link rel="stylesheet" href="./css/my-styles.css">
+  </head>
+  <body>
+    <div class="container">
+
+      <header>
+        <div align="middle">
+          <img id='titleImage' src='./img/bridgegorge.jpg' alt='The Bridge of Death'>
+        </div>
+      </header>
+
+      <div class="centerText">
+        <h1>Guess The Number</h1>
+        <p id='theLead' >Guess correctly to pass or be cast into the gorge of eternal peril!</p>
+
+        <div>
+          <input type="text" id='playerGuess' onkeydown="if (event.keyCode == 13) document.getElementById('checkGuess').click()" placeholder='Input A Number 1-100' />
+          <br>
+          <h3 id='result'>You will have <strike>3</strike> 5 guesses</h3>
+          <p id='guessCount'>5 Guesses Remaining</p>
+          <button onclick="checkTheGuess()" id='checkGuess' type="submit" value="Submit">Submit Your Guess</button>
+        </div>
+        <hr>
+        <div>
+          <button onclick="location.reload()" id='playAgain' type="submit" value="play_again">Play Again</button>
+          <button onclick="giveHint()" id='giveHint' type="submit" value="give_hint">Perhaps a Hint</button>
+        </div>
+        <hr>
+        <div>
+          <p id='theHistory'></p>
+        </div>
+      </div>
+
+      <hr>
+      <div class="centerText">
+        <p>&copy; 2015 Guess The Number - By Martin Butler</p>
+      </div>
+    </div>
+    <script src="./js/application.js"></script>
+  </body>
+
+  
