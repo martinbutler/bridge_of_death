@@ -5,3 +5,5 @@ Inspired by Bridge of Death in Monty Python where you had to answer 3 questions 
 This is a guess the number game with 5 chances (watch the video to understand why 5 instead of 3).
 
 It was built with no frameworks or scaffolding.
+
+[Play Game} (http://htmlpreview.github.io/?https://github.com/martinbutler/bridge_of_death/blob/master/bridge_of_death.html)
